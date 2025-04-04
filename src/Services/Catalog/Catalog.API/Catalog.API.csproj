@@ -11,14 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Products\GetProducts\GetProductsEndpoint.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Products\GetProducts\GetProductsEndpoint.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
     <PackageReference Include="Mapster" Version="7.4.0" />
 	 <PackageReference Include="Carter" Version="8.0.0" />
     <PackageReference Include="Marten" Version="7.31.3" />
