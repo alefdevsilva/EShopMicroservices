@@ -24,18 +24,18 @@ message CouponModel {
 	int32 amount = 4;
 }
 
-message CreateDiscountRequest{
+message CreateDiscountRequest {
 	CouponModel coupon = 1;
 }
 
-message UpdateDiscountRequest{
+message UpdateDiscountRequest {
 	CouponModel coupon = 1;
 }
 
-message DeleteDiscountRequest{
+message DeleteDiscountRequest {
 	string productName = 1;
 }
 
-message DeleteDiscountResponse{
+message DeleteDiscountResponse {
 	bool success = 1;
 }
