@@ -19,6 +19,8 @@ public class DiscountService
         if (coupon is null)
             coupon = new Coupon { ProductName = "No Discount", Amount = 0, Description = "No Discount Desc" };
 
+        logger.LogInformation("Discount is retrivied for ProductName : {productName}, Amount : {amount}", coupon.ProductName, coupon.Amount);
+
         var couponModel = coupon.Adapt<CouponModel>();
         return couponModel;
     }
